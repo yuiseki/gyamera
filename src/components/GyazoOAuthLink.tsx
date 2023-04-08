@@ -51,6 +51,7 @@ export const GyazoOAuthLink = () => {
           const json = await res.json();
           if ("access_token" in json) {
             document.cookie = `Gyamera_access_token=${json.access_token}`;
+            location.href = "/";
           }
         } else {
           console.log(res.status);
