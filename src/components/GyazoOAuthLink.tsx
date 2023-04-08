@@ -77,7 +77,7 @@ export const GyazoOAuthLink = () => {
   }
 
   if (oauthCodeFromUrlParams !== null && oauthStateFromUrlParams !== null) {
-    return <div>Authorization...</div>;
+    return <div>Authorize now... Please wait...</div>;
   }
 
   return (
